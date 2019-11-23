@@ -62,14 +62,44 @@
   <div class="lx-post">
     <div class="lx-entry padding">
       <div>
-        <h1 id="markdown-学习笔记"><a href="#markdown-学习笔记" class="headerlink" title="markdown 学习笔记"></a>markdown 学习笔记</h1><h2 id="markdown语法是一种标记语法。"><a href="#markdown语法是一种标记语法。" class="headerlink" title="markdown语法是一种标记语法。"></a>markdown语法是一种标记语法。</h2><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><p>标题用“#”放在语句开头来标注，”#“个数= 标题等级。<strong><em>注意</em></strong>：”#“后面一般要加一个空格再编辑文字。</p>
+        <h1 id="markdown-学习笔记"><a href="#markdown-学习笔记" class="headerlink" title="markdown 学习笔记"></a>markdown 学习笔记</h1><h2 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h2><p>标题用“#”放在语句开头来标注，”#“个数= 标题等级。<strong><em>注意</em></strong>：”#“后面一般要加一个空格再编辑文字。</p>
 <p>示例：</p>
-<h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><h3 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h3><h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><h4 id="加粗："><a href="#加粗：" class="headerlink" title="加粗："></a>加粗：</h4><p>要加粗的文字左右两边用两个“*”</p>
-<h4 id="斜体："><a href="#斜体：" class="headerlink" title="斜体："></a>斜体：</h4><p>在文字两边加一个”*“</p>
-<h4 id="斜体加粗："><a href="#斜体加粗：" class="headerlink" title="斜体加粗："></a>斜体加粗：</h4><p>文字两边加三个”*“</p>
-<h4 id="删除线："><a href="#删除线：" class="headerlink" title="删除线："></a>删除线：</h4><p>文字两边加两个”~“</p>
+<h4 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h4><h5 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h5><h6 id="标题三"><a href="#标题三" class="headerlink" title="标题三"></a>标题三</h6><h2 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h2><ul>
+<li>加粗：</li>
+</ul>
+<p>要<strong>加粗</strong>的文字左右两边用两个“*”  </p>
+<p>“_”和“*”<strong>同效</strong>。</p>
+<ul>
+<li>斜体：</li>
+</ul>
+<p>在文字两边加一个”*“</p>
+<ul>
+<li>斜体加粗：</li>
+</ul>
+<p>文字两边加三个”*“</p>
+<ul>
+<li>删除线：</li>
+</ul>
+<p>文字两边加两个”~“</p>
+<ul>
+<li>下划线：</li>
+</ul>
+<p>”<u>“包裹文字即可。</p>
+<ul>
+<li>脚注</li>
+</ul>
+<p>对文字加以注释。</p>
+<p><code>形如：[^&quot;需脚注文字&quot;]:要添加的脚注&quot;</code></p>
 <p>效果如下：</p>
-<p><strong>加粗</strong> <em>斜体</em> <strong><em>斜体加粗</em></strong> <del>删除线</del></p>
+<p><strong>加粗</strong> <em>斜体</em> <strong><em>斜体加粗</em></strong> <del>删除线</del>  <u>下划线</u>  </p>
+<ul>
+<li>正常显示特殊符号需要在特殊符号前加斜杠\  </li>
+</ul>
+<p>例如下表中符号</p>
+<figure class="highlight k"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜线</span><br><span class="line">`   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   下划线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  小括号</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   英文句点</span><br><span class="line">!   感叹号</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h2><p>在引用的文字前加&gt;即可。引用也可以嵌套。</p>
 <p>示例：</p>
 <blockquote>
@@ -80,9 +110,13 @@
 <h2 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h2><p>语法：</p>
 <p><strong>！[图片alt]（图片地址”图片title“）</strong></p>
 <p>图片alt：图片下方注释。</p>
-<p>图片title：图片上显示的内容。</p>
-<h2 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h2><p><strong>[超链接名称]（对应地址）</strong></p>
+<p>图片title：鼠标指针放置在图片上时显示的内容。</p>
+<h2 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h2><p><strong>[超链接名称]（对应地址）</strong>  </p>
+<p>对应地址可以用变量代替，在文档尾部给变量赋一个网址。  </p>
+<p>例如：<code>[我的博客](1)</code>  </p>
+<p><code>[1]:yaoplusplus.github.io</code></p>
 <p>例如：<a href="yaoplusplus.github.io">My blog</a></p>
+<p><a href="1">My blog</a></p>
 <h2 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h2><h4 id="无序列表："><a href="#无序列表：" class="headerlink" title="无序列表："></a>无序列表：</h4><ul>
 <li><p><strong>“+、-、*”三个符号放在段首并用空格与文字隔开即可。</strong></p>
 </li>
@@ -102,13 +136,24 @@
 </ol>
 </li>
 </ul>
-<p><strong>上一级和下一级之间敲三个空格即可。</strong></p>
+<p><strong>上一级和下一级之间敲三个空格即可。</strong>记得在列表符和文字之间加一个以上空格</p>
 <ul>
-<li>一级无序内容   <ol>
-<li>二级有序内容</li>
-<li>二级有序内容<ol>
-<li>三级有序<ul>
-<li>四级无序内容。</li>
+<li><p>一级无序内容   </p>
+<ol>
+<li><p>二级有序内容</p>
+</li>
+<li><p>二级有序内容</p>
+<ol>
+<li><p>三级有序</p>
+<ul>
+<li><p>四级无序内容</p>
+<ul>
+<li>五级无序<ol>
+<li>六级</li>
+</ol>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ol>
@@ -117,38 +162,66 @@
 </li>
 </ul>
 <h2 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h2><p>语法：</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|：--：|---：  <span class="comment">//分割表头和表格内容，一个即可</span></span><br><span class="line">内容|内容|内容</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---：|--：|---：  <span class="comment">//分割表头和表格内容，一个即可</span></span><br><span class="line">内容|内容|内容  </span><br><span class="line">-: 设置内容和标题栏居右对齐。</span><br><span class="line">:- 设置内容和标题栏居左对齐。</span><br><span class="line">:-: 设置内容和标题栏居中对齐。  </span><br><span class="line">仅使用<span class="string">":"</span>默认为左对齐。</span><br><span class="line"><span class="string">"-"</span>的个数只需一个即可实现对齐设置，多余一个主要是考虑美观</span><br></pre></td></tr></table></figure>
 
 <p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">左对齐 | 右对齐 | 居中对齐 </span><br><span class="line">:| : | : </span><br><span class="line">单元格 | 单元格 | 单元格 </span><br><span class="line">单元格 | 单元格 | 单元格</span><br></pre></td></tr></table></figure>
+
+
+
 <table>
 <thead>
 <tr>
-<th align="center">姓名</th>
-<th align="center">家乡</th>
-<th align="center">年龄</th>
+<th align="left">左对齐</th>
+<th align="right">右对齐</th>
+<th align="center">居中对齐</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">王</td>
-<td align="center">河北</td>
-<td align="center">19</td>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
 </tr>
 <tr>
-<td align="center">伍</td>
-<td align="center">广东</td>
-<td align="center">20</td>
+<td align="left">单元格</td>
+<td align="right">单元格</td>
+<td align="center">单元格</td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>左对齐</th>
+<th>右对齐</th>
+<th>居中对齐</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
+</tr>
+<tr>
+<td>单元格</td>
+<td>单元格</td>
+<td>单元格</td>
 </tr>
 </tbody></table>
 <h2 id="九、代码-amp-代码块"><a href="#九、代码-amp-代码块" class="headerlink" title="九、代码&amp;代码块"></a>九、代码&amp;代码块</h2><p>语法：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">单行代码：“ ` ”包裹文字</span><br></pre></td></tr></table></figure>
 
 <p>示例：<code>freopen(&quot;file.txt&quot;,&quot;w&quot;,stdout);</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块：“ ``` ”包裹即可。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">代码块：“```”加”你使用的语言“加回车</span><br><span class="line">例如：```c++</span><br></pre></td></tr></table></figure>
 
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">cout&lt;&lt;&quot;hello world! &quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h4 id="我学习markdown语法主要是因为很多博客都会使用它来编辑文章。"><a href="#我学习markdown语法主要是因为很多博客都会使用它来编辑文章。" class="headerlink" title="我学习markdown语法主要是因为很多博客都会使用它来编辑文章。"></a>我学习markdown语法主要是因为很多博客都会使用它来编辑文章。</h4>
+<h2 id="十、换行"><a href="#十、换行" class="headerlink" title="十、换行"></a>十、换行</h2><p><code>语法：句末加两个以上的空格加回车即可实现换行。</code> </p>
+<p>示例：  </p>
+<p>这是换行后的一句话。</p>
+<p><code>&lt;br/&gt;之类的一些html语法也可以使用</code></p>
+<p><code>目前支持的 HTML 元素有:&lt;kbd&gt;-代码块 &lt;b&gt;或&lt;strong&gt;-加粗 &lt;i&gt;或&lt;em&gt;-斜体 &lt;em&gt; &lt;sup&gt;-上标 &lt;sub&gt;-下标 &lt;br/&gt;或&lt;br&gt;-换行 等</code></p>
+
       </div>
     </div>
   </div>
